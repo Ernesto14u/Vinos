@@ -16,8 +16,9 @@ import streamlit as st
 vinotfidf = pd.read_csv('vino_var_sab.csv')
 
 st.title('Wine Recommender')
-
-
+color=st.selectbox("Qué color de vino prefieres?", options=list('Red','Rose','White', 'It`s the same'))])
+if color !='It`s the same':
+    vinotfidf= vinotfidf.loc[vinotfidf['Colour']== color]
 respuestas = list()
 st.subheader('Crea tu vino')
 respuestas.append(st.slider('apple:', 1, 10, 1))
