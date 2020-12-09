@@ -40,9 +40,9 @@ vino =vino.dropna()
 #Nos quedamos sólo con la columna description
 
 #descriptions = vino.description
-sabores = ['cherry','spice','apple','sweet','fresh','smoky',
-           'cinnamon','herb','tobacco','vanilla','berry','dry',
-           'plum','blend','character','aromatic','soft']
+sabores = ['cherry','spice','apple','sweet','fresh',
+           'strawberry','cinnamon','herb','oak','vanilla',
+           'dry','plum','character','soft']
 
 variedad = vino['Variety'].unique()
 
