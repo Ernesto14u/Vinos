@@ -77,7 +77,7 @@ val =matriz_tfidf.A
 vino_var_sab = pd.DataFrame(val, index=variedad, columns= col)
 vino_var_sab.reset_index(inplace=True)
 
-vino_var_sab = pd.concat([vino_var_sab, vino[['Colour','Rank','Price','Country']]], axis=1)
+vino_var_sab['Colour'] =vino.Colour
 
 vino_var_sab.to_csv('vino_var_sab.csv')
 
