@@ -15,7 +15,7 @@ import streamlit as st
 
 vinotfidf = pd.read_csv('vino_var_sab.csv')
 
-st.title('Wine Recomendator')
+st.title('Wine Recommender')
 
 st.write(vinotfidf)
 
