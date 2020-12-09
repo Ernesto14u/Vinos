@@ -37,8 +37,8 @@ respuestas.append(st.slider('sweet:', 1, 5, 1))
 respuestas.append(st.slider('vanilla:', 1, 5, 1))        
               
 
-poronga=vinotfidf.iloc[:,2:-1].values
-multiplicación_de_matriz=poronga*np.array(respuestas)
+algo=vinotfidf.iloc[:,2:-1].values
+multiplicación_de_matriz=algo*np.array(respuestas)
 salida = np.sum(multiplicación_de_matriz, axis=1)
 index_max= np.argmax(salida)
 vino_favorito=vinotfidf.iloc[index_max  ,1]
