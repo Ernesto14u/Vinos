@@ -38,7 +38,7 @@ respuestas.append(st.slider('vanilla:', 1, 10, 1))
               
 st.write(respuestas)
 
-multiplicación_de_matriz=vinotfidf([2:-4])*respuestas
+multiplicación_de_matriz=vinotfidf.iloc([2:-4])*respuestas
 salida = np.sum(multiplicación_de_matriz, axis=1)
 index_max= np.argmax(salida)
 variedad[index_max]
