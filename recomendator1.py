@@ -37,3 +37,6 @@ respuestas.append(st.slider('sweet:', 1, 10, 1))
 respuestas.append(st.slider('vanilla:', 1, 10, 1))        
               
 st.write(respuestas)
+
+multiplicación_de_matriz=vinotfidf[2:-4]*respuestas
+multiplicación_de_matriz
