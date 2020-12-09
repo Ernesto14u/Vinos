@@ -19,3 +19,18 @@ st.title('Wine Recommender')
 
 st.write(vinotfidf)
 
+st.slider('sweet:', 1, 10, 1)
+st.slider('dry:', 1, 10, 1)
+st.slider('character:', 1, 10, 1)
+st.slider('soft:', 1, 10, 1)
+st.slider('fresh:', 1, 10, 1)
+st.slider('spice:', 1, 10, 1)
+st.slider('cherry:', 1, 10, 1)
+st.slider('strawberry:', 1, 10, 1)
+st.slider('apple:', 1, 10, 1)
+st.slider('plum:', 1, 10, 1)
+st.slider('cinnamon:', 1, 10, 1)
+st.slider('vanilla:', 1, 10, 1) 
+st.slider('herb:', 1, 10, 1) 
+st.slider('oak:', 1, 10, 1)        
+              
