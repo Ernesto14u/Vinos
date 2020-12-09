@@ -11,6 +11,8 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 vino = pd.read_excel('vino.xlsx')
 vino.set_index('Wine Id', inplace=True)
@@ -60,7 +62,7 @@ for variety in variedad:
     
     mi_lista.append(descriptions)
     
-    from sklearn.feature_extraction.text import TfidfVectorizer
+    
 # ln(N+1/df+1) +1
 
 
@@ -74,16 +76,7 @@ val =matriz_tfidf.A
 
 vino_var_sab = pd.DataFrame(val, index=variedad, columns= col)
 
-vector=np.array([4,3,0,2,3,3,3,5,5,4,4,1,1,0,0,4,4])
 
-multiplicación_de_matriz = matriz_tfidf.A*vector
+vino_var_sab.to_csv('vino_var_sab.csv')
 
-salida = np.sum(multiplicación_de_matriz, axis=1)
-
-index_max= np.argmax(salida)
-
-
-variedad[index_max]
-
-
-
+  
