@@ -75,8 +75,8 @@ st.title('Finally... ')
 st.image(image2,width=700)
 st.title('The wine variety that best suits your taste is:')
 st.subheader(vino_favorito)
-###########
 
+st.text('Some recommendation:')
 vino.set_index('Wine Id', inplace=True)
 variedad = vino['Variety'].unique()
 Varie=variedad[index_max]
