@@ -46,15 +46,4 @@ index_max= np.argmax(salida)
 vino_favorito=vinotfidf.iloc[index_max  ,1]
 st.write(vino_favorito)
 
-progress_bar = st.progress(0)
-status_text = st.empty()
 
-
-for i in respuestas:
-    # Update progress bar.
-    progress_bar.progress(i + 1)
-
-  
-
-status_text.text('Done!')
-st.balloons()
