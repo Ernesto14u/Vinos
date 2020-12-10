@@ -22,35 +22,6 @@ if color !='It´s the same':
 respuestas = list()
 
 
-progress_bar = st.progress(0)
-status_text = st.empty()
-
-
-for i in range(100):
-    # Update progress bar.
-    progress_bar.progress(i + 1)
-
-  
-
-status_text.text('Done!')
-st.balloons()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 st.subheader('Crea tu vino')
 respuestas.append(st.slider('apple:', 1, 5, 1))
 respuestas.append(st.slider('character:', 1, 5, 1))
@@ -75,3 +46,15 @@ index_max= np.argmax(salida)
 vino_favorito=vinotfidf.iloc[index_max  ,1]
 st.write(vino_favorito)
 
+progress_bar = st.progress(0)
+status_text = st.empty()
+
+
+for i in respuestas:
+    # Update progress bar.
+    progress_bar.progress(i + 1)
+
+  
+
+status_text.text('Done!')
+st.balloons()
