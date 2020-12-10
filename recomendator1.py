@@ -16,14 +16,16 @@ import streamlit as st
 vinotfidf = pd.read_csv('dfcito.csv')
 
 st.title('Wine Recommender')
+st.subheader('Let´s find the wine variety that most closely matches your taste!')
 st.info('First of all, select the colour of the wine')
 color=st.selectbox("Choose one", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
     vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
+
+
+
 respuestas = list()
 
-
-st.subheader('Let´s find the variety of wine that most closely matches your tastes')
 st.error('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
 st.subheader('Start your taste trip!!')
 st.success('Apple')
@@ -61,7 +63,8 @@ multiplicación_de_matriz=algo*np.array(respuestas)
 salida = np.sum(multiplicación_de_matriz, axis=1)
 index_max= np.argmax(salida)
 vino_favorito=vinotfidf.iloc[index_max  ,1]
-st.title('La variedad de vino que buscas es:')
+st.title('Finally... The wine variety that best suits your taste is:')
 st.subheader(vino_favorito)
+###########
 
 
