@@ -32,7 +32,7 @@ if color !='It´s the same':
 
 respuestas = list()
 
-st.subheader('Start your taste trip!!')
+st.subheader('NOW ...Start your taste trip!!')
 st.info('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
 st.success('Apple')
 respuestas.append(st.slider('Manzana', 1, 5, 1))
