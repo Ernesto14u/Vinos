@@ -11,12 +11,15 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-
+from PIL import Image
+image = Image.open('Vino.jpg')
 
 vinotfidf = pd.read_csv('dfcito.csv')
 
 st.title('Wine Recommender')
+st.image(image)
 st.subheader('Let´s find the wine variety that most closely matches your taste!')
+
 st.warning('First of all, select the colour of the wine')
 color=st.selectbox("Selecciona el color", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
