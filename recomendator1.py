@@ -83,9 +83,12 @@ Varie=variedad[index_max]
 
 reco_wine = vino.loc[vino['Variety'] == vino_favorito]
 reco_wine1=reco_wine.iloc[0].Title 
-reco_wine2=reco_wine.iloc[1].Title 
-reco_wine3=reco_wine.iloc[5].Title 
-
 st.text(reco_wine1)
-st.text(reco_wine2)
-st.text(reco_wine3)
+
+if reco_wine.shape[0] > 1:
+    reco_wine2=reco_wine.iloc[1].Title 
+    st.text(reco_wine2)
+    
+if reco_wine.shape[0] > 2:
+    reco_wine3=reco_wine.iloc[2].Title 
+    st.text(reco_wine3)
