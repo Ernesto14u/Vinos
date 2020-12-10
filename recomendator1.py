@@ -16,6 +16,8 @@ image = Image.open('Vino.jpg')
 image1 = Image.open('Vino2.jpg')
 image2 = Image.open('Vino1.jpg')
 vinotfidf = pd.read_csv('dfcito.csv')
+vino = pd.read_excel('vino.xlsx')
+
 
 st.title('Wine Recommender')
 st.image(image,width=700)
@@ -74,7 +76,7 @@ st.image(image2,width=700)
 st.title('The wine variety that best suits your taste is:')
 st.subheader(vino_favorito)
 ###########
-vino = pd.read_excel('vino.xlsx')
+
 vino.set_index('Wine Id', inplace=True)
 variedad = vino['Variety'].unique()
 Varie=variedad[index_max]
