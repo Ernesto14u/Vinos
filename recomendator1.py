@@ -23,7 +23,7 @@ respuestas = list()
 
 
 st.subheader('Crea tu vino')
-respuestas.append(st.slider('apple:', 1, 5, 1))
+respuestas.append(st.slider(st.succes('apple:'), 1, 5, 1))
 respuestas.append(st.slider('character:', 1, 5, 1))
 respuestas.append(st.slider('cherry:', 1, 5, 1))
 respuestas.append(st.slider('cinnamon:', 1, 5, 1))
