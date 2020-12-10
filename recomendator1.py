@@ -15,8 +15,9 @@ import streamlit as st
 
 vinotfidf = pd.read_csv('dfcito.csv')
 
-st.markdown(#'Wine Recommender'#)
-color=st.selectbox("Qué color de vino prefieres?", ('Red','Rose','White', 'It´s the same'))
+st.title('Wine Recommender')
+st.warning('Select the color of your wine variety desired')
+color=st.selectbox(,('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
     vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
 respuestas = list()
