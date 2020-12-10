@@ -74,9 +74,11 @@ st.image(image2,width=700)
 st.title('The wine variety that best suits your taste is:')
 st.subheader(vino_favorito)
 ###########
+vino = pd.read_excel('vino.xlsx')
+vino.set_index('Wine Id', inplace=True)
+variedad = vino['Variety'].unique()
+Varie=variedad[index_max]
 
-#Varie=variedad[vino_favorito]
-#Varie
 reco_wine = vino.loc[vino['Variety'] == Varie]
 reco_wine1=reco_wine.iloc[0:5].Title 
 st.title(reco_wine1)
