@@ -79,6 +79,6 @@ vino_var_sab.reset_index(inplace=True)
 
 #vino_var_sab['Colour'] = vino.iloc[:,4].values 
 
-vino_var_sab.to_csv('vino_var_sab.csv')
+#vino_var_sab.to_csv('vino_var_sab.csv')
 
   
