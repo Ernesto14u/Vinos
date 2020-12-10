@@ -75,8 +75,8 @@ st.title('The wine variety that best suits your taste is:')
 st.subheader(vino_favorito)
 ###########
 
-Varie=variedad[vino_favorito]
-Varie
+#Varie=variedad[vino_favorito]
+#Varie
 reco_wine = vino.loc[vino['Variety'] == Varie]
 reco_wine1=reco_wine.iloc[0:5].Title 
 st.title(reco_wine1)
