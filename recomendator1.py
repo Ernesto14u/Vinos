@@ -13,14 +13,17 @@ import seaborn as sns
 import streamlit as st
 from PIL import Image
 image = Image.open('Vino.jpg')
-
+image1 = Image.open('Vino2.jpg')
+image2 = Image.open('Vino1.jpg')
 vinotfidf = pd.read_csv('dfcito.csv')
 
 st.title('Wine Recommender')
 st.image(image,width=700)
 st.subheader('Let´s find the wine variety that most closely matches your taste!')
 
+
 st.warning('First of all, select the colour of the wine')
+st.image(image1,width=200)
 color=st.selectbox("Selecciona el color", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
     vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
@@ -66,7 +69,9 @@ multiplicación_de_matriz=algo*np.array(respuestas)
 salida = np.sum(multiplicación_de_matriz, axis=1)
 index_max= np.argmax(salida)
 vino_favorito=vinotfidf.iloc[index_max  ,1]
-st.title('Finally... The wine variety that best suits your taste is:')
+st.title('Finally... ')
+st.image(image2,width=700)
+st.title('The wine variety that best suits your taste is:')
 st.subheader(vino_favorito)
 ###########
 
