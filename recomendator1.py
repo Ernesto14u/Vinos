@@ -18,7 +18,7 @@ vinotfidf = pd.read_csv('dfcito.csv')
 st.title('Wine Recommender')
 st.subheader('Let´s find the wine variety that most closely matches your taste!')
 st.info('First of all, select the colour of the wine')
-color=st.selectbox("Choose one", ('Red','Rose','White', 'It´s the same'))
+color=st.selectbox("Selecciona el color", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
     vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
 
