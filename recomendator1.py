@@ -23,9 +23,9 @@ if color !='It´s the same':
 respuestas = list()
 
 
-st.error('Let´s find the variety of wine that most closely matches your tastes')
-st.warning('       From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
-st.subheader('Let´s play now!!')
+st.subheader('Let´s find the variety of wine that most closely matches your tastes')
+st.subheader('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
+st.subheader('Start your taste trip!!')
 st.success('Apple')
 respuestas.append(st.slider('Manzana', 1, 5, 1))
 st.info('Character')
