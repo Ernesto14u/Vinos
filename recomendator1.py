@@ -17,7 +17,7 @@ vinotfidf = pd.read_csv('dfcito.csv')
 
 st.title('Wine Recommender')
 st.subheader('Let´s find the wine variety that most closely matches your taste!')
-st.info('First of all, select the colour of the wine')
+st.warning('First of all, select the colour of the wine')
 color=st.selectbox("Selecciona el color", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
     vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
@@ -26,7 +26,7 @@ if color !='It´s the same':
 
 respuestas = list()
 
-st.error('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
+st.info('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
 st.subheader('Start your taste trip!!')
 st.success('Apple')
 respuestas.append(st.slider('Manzana', 1, 5, 1))
