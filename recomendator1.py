@@ -18,7 +18,7 @@ vinotfidf = pd.read_csv('dfcito.csv')
 st.title('Wine Recommender')
 color=st.selectbox("Qué color de vino prefieres?", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
-    vinotfidf= vinotfidf.loc[vinotfidf['Colour']== color]
+    vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
 respuestas = list()
 st.subheader('Crea tu vino')
 respuestas.append(st.slider('apple:', 1, 5, 1))
