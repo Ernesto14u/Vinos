@@ -23,7 +23,7 @@ st.subheader('Let´s find the wine variety that most closely matches your taste!
 
 
 st.warning('First of all, select the colour of the wine')
-st.image(image1,width=200)
+st.image(image1,width=300)
 color=st.selectbox("Selecciona el color", ('Red','Rose','White', 'It´s the same'))
 if color !='It´s the same':
     vinotfidf= vinotfidf.loc[vinotfidf['Color']== color]
@@ -32,8 +32,8 @@ if color !='It´s the same':
 
 respuestas = list()
 
-st.info('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
 st.subheader('Start your taste trip!!')
+st.info('From 1 to 5     --------      (1) Don´t like it       --------      (5)  Love it')
 st.success('Apple')
 respuestas.append(st.slider('Manzana', 1, 5, 1))
 st.info('Character')
