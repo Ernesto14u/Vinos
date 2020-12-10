@@ -13,7 +13,7 @@ import seaborn as sns
 import streamlit as st
 
 
-vinotfidf = pd.read_('dfcito.csv')
+vinotfidf = pd.read('dfcito.csv')
 
 st.title('Wine Recommender')
 color=st.selectbox("Qué color de vino prefieres?", ('Red','Rose','White', 'It´s the same'))
