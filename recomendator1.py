@@ -17,7 +17,7 @@ image = Image.open('Vino.jpg')
 vinotfidf = pd.read_csv('dfcito.csv')
 
 st.title('Wine Recommender')
-st.image(image,width=400)
+st.image(image,width=700)
 st.subheader('Let´s find the wine variety that most closely matches your taste!')
 
 st.warning('First of all, select the colour of the wine')
