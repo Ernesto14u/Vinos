@@ -22,10 +22,13 @@ if color !='It´s the same':
 respuestas = list()
 
 
-st.subheader('Crea tu vino')
-st.warning('Busquemos la variedad de vino que mas se asemeja a tus gustos')
+st.subheader('Let´s find the variety of wine that most closely matches your tastes')
+st.warning('1: is Don´t like and 5 is: Love it')
+
+st.succes('Apple')
 respuestas.append(st.slider('', 1, 5, 1))
-respuestas.append(st.slider('character:', 1, 5, 1))
+st.info('Character')
+respuestas.append(st.slider('', 1, 5, 1))
 respuestas.append(st.slider('cherry:', 1, 5, 1))
 respuestas.append(st.slider('cinnamon:', 1, 5, 1))
 respuestas.append(st.slider('dry:', 1, 5, 1))
