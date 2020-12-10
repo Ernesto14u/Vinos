@@ -16,7 +16,7 @@ image = Image.open('Vino.jpg')
 image1 = Image.open('Vino2.jpg')
 image2 = Image.open('Vino1.jpg')
 vinotfidf = pd.read_csv('dfcito.csv')
-vino = pd.read_excel('vino.xlsx')
+vino = pd.read_csv('mis_vinos.csv')
 
 
 st.title('Wine Recommender')
