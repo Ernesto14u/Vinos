@@ -24,7 +24,7 @@ respuestas = list()
 
 st.subheader('Crea tu vino')
 st.warning('Busquemos la variedad de vino que mas se asemeja a tus gustos')
-respuestas.append(st.slider('apple:', 1, 5, 1))
+respuestas.append(st.slider('', 1, 5, 1))
 respuestas.append(st.slider('character:', 1, 5, 1))
 respuestas.append(st.slider('cherry:', 1, 5, 1))
 respuestas.append(st.slider('cinnamon:', 1, 5, 1))
