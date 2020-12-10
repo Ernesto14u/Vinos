@@ -79,7 +79,7 @@ vino.set_index('Wine Id', inplace=True)
 variedad = vino['Variety'].unique()
 Varie=variedad[index_max]
 
-reco_wine = vino.loc[vino['Variety'] == Varie]
+reco_wine = vino.loc[vino['Variety'] == vino_favorito]
 reco_wine1=reco_wine.iloc[0].Title 
 reco_wine2=reco_wine.iloc[1].Title 
 reco_wine3=reco_wine.iloc[5].Title 
