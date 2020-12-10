@@ -80,5 +80,12 @@ variedad = vino['Variety'].unique()
 Varie=variedad[index_max]
 
 reco_wine = vino.loc[vino['Variety'] == Varie]
-reco_wine1=reco_wine.iloc[0:3].Title 
+reco_wine1=reco_wine.iloc[0].Title 
+reco_wine2=reco_wine.iloc[1].Title 
+reco_wine3=reco_wine.iloc[5].Title 
+reco_wine4=reco_wine.iloc[2].Title 
+reco_wine5=reco_wine.iloc[4].Title 
 st.title(reco_wine1)
+st.title(reco_wine2)
+st.title(reco_wine3)
+st.title(reco_wine4)
