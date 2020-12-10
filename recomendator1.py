@@ -23,9 +23,9 @@ respuestas = list()
 
 
 st.subheader('Let´s find the variety of wine that most closely matches your tastes')
-st.warning('1: is Don´t like and 5 is: Love it')
+st.warning(' From 1 to 5 -------- 1: Don´t like it ------ 5 is: Love it')
 
-st.succes('Apple')
+st.success('Apple')
 respuestas.append(st.slider('', 1, 5, 1))
 st.info('Character')
 respuestas.append(st.slider('', 1, 5, 1))
